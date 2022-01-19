@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 100%;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  box-shadow: 0 0 2rem hsl(224, 23%, 55%);
+  width: 85vw;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2vw;
+  color: hsl(223, 47%, 23%);
+}
+
+.top-image {
+  border-start-start-radius: 2vw;
+  border-start-end-radius: 2vw;
+}
+
+.summary {
+  padding: 0 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-kerning: normal;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.amount {
+  width: 80%;
+  height: 8vh;
+  margin: 2vh 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1vw;
+}
+
+.amount div p {
+  font-weight: 700;
+}
+
+.amount div figure {
+  font-weight: 500;
+  color: gray;
+}
+
+.music-icon {
+  height: 50%;
+  margin-right: -3vh;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.payment button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 0;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 1vw;
+}
+
+.payment-proceed {
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+}
+.payment-cancel {
+  background-color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  color: gray;
+}
+
+.payment-proceed:hover {
+  cursor: pointer;
+  background-color: hsl(253, 68%, 58%);
+  font-weight: 700;
+}
+.payment-cancel:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1.5rem 0px;
+}
+
+a {
+  color: hsl(223, 47%, 23%);
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: hsl(253, 68%, 58%);
+}
+
+@media (max-width: 325px) {
+  .summary {
+    font-size: 0.8rem;
+  }
+  .amount {
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+  .music-icon {
+    display: none;
+  }
+}
