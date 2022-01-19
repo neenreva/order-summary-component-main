@@ -37,13 +37,13 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-radius: 2vw;
+  border-radius: 2vh;
   color: hsl(223, 47%, 23%);
 }
 
 .top-image {
-  border-start-start-radius: 2vw;
-  border-start-end-radius: 2vw;
+  border-start-start-radius: 2vh;
+  border-start-end-radius: 2vh;
 }
 
 .summary {
@@ -64,7 +64,7 @@ main {
   align-items: center;
   justify-content: space-around;
   background-color: hsl(225, 100%, 98%);
-  border-radius: 1vw;
+  border-radius: 1vh;
 }
 
 .amount div p {
@@ -95,7 +95,7 @@ main {
   padding: 0.75rem 0;
   margin: 0.5rem 0;
   border: none;
-  border-radius: 1vw;
+  border-radius: 1vh;
 }
 
 .payment-proceed {
